@@ -60,9 +60,10 @@ dependencies {
     modRuntimeOnly "maven.modrinth:ksyxis:${project.version_ksyxis}"
     modRuntimeOnly "maven.modrinth:c2me-fabric:${project.version_c2me}"
     modRuntimeOnly "maven.modrinth:notenoughcrashes:${project.version_nec}"
+    runtimeOnly "com.ibm.async:asyncutil:${async_util_version}"
 
     // https://mvnrepository.com/artifact/org.yaml/snakeyaml
-    implementation include('org.yaml:snakeyaml:1.30')
+    implementation include("org.yaml:snakeyaml:1.30")
 }
 
 processResources {
